@@ -24,3 +24,8 @@
 @media(max-width:600px){.certificateControls>div{flex-direction:column}.certificateBorder{padding:25px 16px}.certificateMeta{flex-direction:column;gap:5px}.certificateName{min-width:100%;padding:8px}}
 @media print{body.printCertificateOnly header,body.printCertificateOnly footer,body.printCertificateOnly .resultHero,body.printCertificateOnly .resultBody>h2,body.printCertificateOnly .resultBody>p,body.printCertificateOnly .resultBody>table,body.printCertificateOnly .rounding,body.printCertificateOnly details,body.printCertificateOnly .resultActions,body.printCertificateOnly .certificateControls{display:none!important}body.printCertificateOnly main{padding:0;margin:0;max-width:none}body.printCertificateOnly .resultBody{padding:0;margin:0}body.printCertificateOnly .certificate{display:block!important;border-radius:0;box-shadow:none;padding:14mm}body.printCertificateOnly .certificateBorder{min-height:170mm;display:flex;flex-direction:column;justify-content:center}body.printCertificateOnly .certificate::before,body.printCertificateOnly .certificate::after{display:block!important}}
 .certificateNote{max-width:560px;margin:22px auto 0;padding:12px 16px;border-radius:12px;background:#eef4ff;border:1px solid #c8d8f0;color:#294e81;font-size:.78rem;line-height:1.5}.certificateNote strong,.certificateNote span{display:block}.certificateNote strong{margin-bottom:3px;color:#153c91}
+
+/* Font skrin yang jelas pada telefon dan komputer. */
+:root{--font-ui:Arial,'Helvetica Neue',Helvetica,sans-serif;font-family:var(--font-ui)}
+body,button,input,select,textarea{font-family:var(--font-ui)}
+.prompt,.big:not(.arabic),.answer:not(.arabic),.tile,.letterBank button,.answerBank button{font-family:var(--font-ui);font-variant-ligatures:none}
